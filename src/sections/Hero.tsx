@@ -64,9 +64,9 @@ export const HeroSection = () => {
           </div>
           <div className="max-w-lg mx-auto">
             {/* <h1 className="font-serif text-3xl md:text-5xl text-center mt-8 tracking-wide"></h1> */}
-            <p className="mt-4 text-center text-white/60 md:text-xl ">Hey there! I’m <span className="text-2xl">Rishu </span>, a tech enthusiast and a soon-to-be engineer from NIT Jalandhar. 
+            <p className="mt-4 text-center text-white/60 md:text-xl ">Hey there! I&apos;sm <span className="text-2xl">Rishu </span>, a tech enthusiast and a soon-to-be engineer from NIT Jalandhar. 
             I specialize in creating user-friendly web apps with React, Next.js, and Express, while also exploring the exciting world of machine learning. 
-            Whether it’s designing interactive interfaces or training ML models, I enjoy turning ideas into smart and beautiful products.
+            Whether it&apos;s designing interactive interfaces or training ML models, I enjoy turning ideas into smart and beautiful products.
             </p>
           </div>
             <div className="flex flex-col md:flex-row justify-center items-center mt-8 gap-4">

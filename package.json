@@ -1,8 +1,8 @@
 {
+  "homepage": "https://rishu8898.github.io/Portfolio",
   "name": "portfolio-site-2",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://rishu8898.github.io/Portfolio",
   "scripts": {
     "dev": "next dev",
     "build": "next build",

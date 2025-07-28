@@ -8,8 +8,8 @@ export const ContactSection = () => {
           <div>
             <h2 className="font-serif text-2xl md:text-3xl">Let's create something amazing together</h2>
             <p className="text-sm md:text-base mt-2 ">
-              I’m always open to exciting projects, collaborations, or just a friendly chat about tech and innovation.
-               Whether you have a question, an idea, or an opportunity – I’d love to hear from you.
+              I&apos;m always open to exciting projects, collaborations, or just a friendly chat about tech and innovation.
+               Whether you have a question, an idea, or an opportunity, I&apos;d love to hear from you.
             </p>
           </div>
           <div>
