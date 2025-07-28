@@ -1,3 +1,5 @@
+{/* eslint-disable react/no-unescaped-entities */}
+
 import ArrowUpRightIcon from '@/assets/icons/arrow-up-right.svg';
 
 export const ContactSection = () => {

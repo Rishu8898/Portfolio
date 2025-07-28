@@ -1,3 +1,5 @@
+{/* eslint-disable react/no-unescaped-entities */}
+
 import Image from "next/image";
 import profilePic from '@/assets/images/profilePic.png'
 import grainImage from "@/assets/images/grain.jpg";
