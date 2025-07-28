@@ -14,9 +14,9 @@ const portfolioProjects = [
     year: "2022",
     title: "Dark Saas Landing Page",
     results: [
-      { title: "Enhanced user experience by 40%" },
-      { title: "Improved site speed by 50%" },
-      { title: "Increased mobile traffic by 35%" },
+      { key:1, title: "Enhanced user experience by 40%" },
+      {key:2, title: "Improved site speed by 50%" },
+      {key:3, title: "Increased mobile traffic by 35%" },
     ],
     link: "https://youtu.be/4k7IdSLxh6w",
     image: darkSaasLandingPage,
@@ -26,9 +26,9 @@ const portfolioProjects = [
     year: "2021",
     title: "Light Saas Landing Page",
     results: [
-      { title: "Boosted sales by 20%" },
-      { title: "Expanded customer reach by 35%" },
-      { title: "Increased brand awareness by 15%" },
+      {key:1, title: "Boosted sales by 20%" },
+      { key:2,title: "Expanded customer reach by 35%" },
+      { key:3,title: "Increased brand awareness by 15%" },
     ],
     link: "https://youtu.be/7hi5zwO75yc",
     image: lightSaasLandingPage,
@@ -38,9 +38,9 @@ const portfolioProjects = [
     year: "2023",
     title: "AI Startup Landing Page",
     results: [
-      { title: "Enhanced user experience by 40%" },
-      { title: "Improved site speed by 50%" },
-      { title: "Increased mobile traffic by 35%" },
+      {key:1, title: "Enhanced user experience by 40%" },
+      {key:2, title: "Improved site speed by 50%" },
+      {key:3, title: "Increased mobile traffic by 35%" },
     ],
     link: "https://youtu.be/Z7I5uSRHMHg",
     image: aiStartupLandingPage,
@@ -77,7 +77,7 @@ export const ProjectsSection = () => {
             <hr className="border-t-2 border-white/5 mt-4 md:mt-5"/>
             <ul className="flex flex-col gap-4 mt-4 md:mt-5">
               {project.results.map((result) => (
-                <li className="flex gap-2 text-sm md:text-base text-white/50">
+                <li key={result.key} className="flex gap-2 text-sm md:text-base text-white/50">
                   <CheckCircleIcon className="size-5 md:size-6"/>
                   <span>{result.title}</span>
                 </li>
