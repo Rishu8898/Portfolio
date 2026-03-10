@@ -9,10 +9,20 @@ export default function Home() {
   return (
     <div>
       <Header />
-      <HeroSection />
-      <ProjectsSection />
-      <AboutSection />
-      <ContactSection />
+      <main>
+        <section id="home">
+          <HeroSection />
+        </section>
+        <section id="projects">
+          <ProjectsSection />
+        </section>
+        <section id="about">
+          <AboutSection />
+        </section>
+        <section id="contact">
+          <ContactSection />
+        </section>
+      </main>
       <Footer />
     </div>
   );

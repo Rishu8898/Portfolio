@@ -10,39 +10,39 @@ import {Card} from "@/components/Card";
 
 const portfolioProjects = [
   {
-    company: "Acme Corp",
-    year: "2022",
-    title: "Dark Saas Landing Page",
+    company: "Alma Port",
+    year: "2024",
+    title: "Blockchain-Based Alumni Verification Portal",
     results: [
-      { key:1, title: "Enhanced user experience by 40%" },
-      {key:2, title: "Improved site speed by 50%" },
-      {key:3, title: "Increased mobile traffic by 35%" },
+      { key: 1, title: "Built secure, tamper-proof alumni credential verification using React, Node.js, and Solidity." },
+      { key: 2, title: "Implemented keccak256 hashing and smart contracts on Polygon Mumbai to store immutable records." },
+      { key: 3, title: "Reduced manual verification time from days to seconds with QR-based instant validation." },
     ],
-    link: "https://youtu.be/4k7IdSLxh6w",
+    link: "https://github.com/rishu8898/Alma-Port",
     image: darkSaasLandingPage,
   },
   {
-    company: "Innovative Co",
-    year: "2021",
-    title: "Light Saas Landing Page",
+    company: "SureScore",
+    year: "2024",
+    title: "Confidence-Based Quiz Platform",
     results: [
-      {key:1, title: "Boosted sales by 20%" },
-      { key:2,title: "Expanded customer reach by 35%" },
-      { key:3,title: "Increased brand awareness by 15%" },
+      { key: 1, title: "Developed full-stack quiz platform with group access and confidence-based scoring." },
+      { key: 2, title: "Created user and admin dashboards focused on usability and performance." },
+      { key: 3, title: "Implemented JWT auth and role-based access for secure test workflows." },
     ],
-    link: "https://youtu.be/7hi5zwO75yc",
+    link: "https://github.com/rishu8898/SureScore",
     image: lightSaasLandingPage,
   },
   {
-    company: "Quantum Dynamics",
+    company: "Sales Forecast Regression Model",
     year: "2023",
-    title: "AI Startup Landing Page",
+    title: "ML-Powered Sales Forecasting",
     results: [
-      {key:1, title: "Enhanced user experience by 40%" },
-      {key:2, title: "Improved site speed by 50%" },
-      {key:3, title: "Increased mobile traffic by 35%" },
+      { key: 1, title: "Designed regression-based forecasting using XGBoost and LightGBM." },
+      { key: 2, title: "Performed feature engineering and EDA to uncover demand patterns." },
+      { key: 3, title: "Tuned models with cross-validation to improve prediction accuracy." },
     ],
-    link: "https://youtu.be/Z7I5uSRHMHg",
+    link: "https://github.com/rishu8898/Sales-Forecast-Regression-Model",
     image: aiStartupLandingPage,
   },
 ];
@@ -65,15 +65,15 @@ export const ProjectsSection = () => {
           >
             <div className="lg:grid lg:grid-cols-2 lg:gap-16">
               <div className="lg:pb-16">
-            <div className="bg-gradient-to-r from-emerald-300 to-sky-400 
-            inline-flex gap-2 font-bold uppercase tracking-widest text-sm
-            text-transparent bg-clip-text">
-              <span>{project.company}</span>
-              <span>&bull;</span>
-              <span>{project.year}</span>
+            <div className="inline-flex items-center gap-2">
+              <span className="px-4 py-1 rounded-full bg-gradient-to-r from-emerald-300 to-sky-400 text-gray-900 text-xs md:text-sm font-semibold uppercase tracking-[0.2em] whitespace-nowrap">
+                {project.company}
+              </span>
             </div>
          
-            <h3 className="font-serif text-2xl mt-2 md:mt-5 md:text-4xl">{project.title}</h3>
+            <h3 className="font-serif text-xl mt-3 md:mt-5 md:text-3xl text-white">
+              {project.title}
+            </h3>
             <hr className="border-t-2 border-white/5 mt-4 md:mt-5"/>
             <ul className="flex flex-col gap-4 mt-4 md:mt-5">
               {project.results.map((result) => (
@@ -83,11 +83,11 @@ export const ProjectsSection = () => {
                 </li>
               ))}
             </ul>
-            <a href={project.link}>
+            <a href={project.link} target="_blank" rel="noopener noreferrer">
               <button className="bg-white text-gray-900 h-12 w-full md:w-auto px-6
               rounded-xl font-semibold inline-flex items-center 
               justify-center gap-2 mt-8">
-                <span>Visit Live Site</span>
+                <span>View on GitHub</span>
                 <ArrawUpRight className="size-4"/></button>
             </a>
             </div>
