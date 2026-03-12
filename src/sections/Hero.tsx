@@ -10,7 +10,8 @@ import { HeroOrbit } from "@/components/HeroOrbit";
 
 const handleDownloadResume = () => {
   const link = document.createElement("a");
-  link.href = "/resume.pdf";
+  // Use a relative path so it works with GitHub Pages basePath (/Portfolio)
+  link.href = "resume.pdf";
   link.download = "Rishu-Resume.pdf";
   document.body.appendChild(link);
   link.click();
