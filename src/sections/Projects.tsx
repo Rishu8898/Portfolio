@@ -18,7 +18,7 @@ const portfolioProjects = [
       { key: 2, title: "Implemented keccak256 hashing and smart contracts on Polygon Mumbai to store immutable records." },
       { key: 3, title: "Reduced manual verification time from days to seconds with QR-based instant validation." },
     ],
-    link: "https://github.com/rishu8898/Alma-Port",
+    link: "https://github.com/Rishu8898/almaport",
     image: darkSaasLandingPage,
   },
   {
@@ -42,7 +42,7 @@ const portfolioProjects = [
       { key: 2, title: "Performed feature engineering and EDA to uncover demand patterns." },
       { key: 3, title: "Tuned models with cross-validation to improve prediction accuracy." },
     ],
-    link: "https://github.com/rishu8898/Sales-Forecast-Regression-Model",
+    link: "https://github.com/Rishu8898/SalesForecast",
     image: aiStartupLandingPage,
   },
 ];

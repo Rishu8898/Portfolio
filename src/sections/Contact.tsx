@@ -28,16 +28,6 @@ export const ContactSection = () => {
                 className="flex flex-col gap-4 mt-8 text-left pointer-events-auto"
               >
                 <label className="text-sm font-medium">
-                  Your Email
-                  <input
-                    type="email"
-                    required
-                    name="email"
-                    className="mt-1 w-full rounded-lg border border-gray-300 px-3 py-2 text-sm text-gray-900 focus:border-gray-900 focus:outline-none pointer-events-auto"
-                    placeholder="you@example.com"
-                  />
-                </label>
-                <label className="text-sm font-medium">
                   Your Message
                   <textarea
                     required

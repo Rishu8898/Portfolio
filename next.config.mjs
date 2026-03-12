@@ -1,5 +1,16 @@
 /** @type {import('next').NextConfig} */
+const isProd = process.env.NODE_ENV === "production";
 const nextConfig = {
+  // Enable static export only for GitHub Pages builds
+  output: isProd ? "export" : undefined,
+  // Your repo is served from /Portfolio on GitHub Pages
+  basePath: isProd ? "/Portfolio" : undefined,
+  assetPrefix: isProd ? "/Portfolio/" : undefined,
+  images: {
+    // Static export doesn't support the Image Optimization API
+    unoptimized: isProd,
+  },
+
   webpack(config) {
     // Grab the existing rule that handles SVG imports
     const fileLoaderRule = config.module.rules.find((rule) =>
